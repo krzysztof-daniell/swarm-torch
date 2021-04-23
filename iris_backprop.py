@@ -64,6 +64,7 @@ if __name__ == '__main__':
         start = default_timer()
 
         model.train()
+        optimizer.zero_grad()
 
         outputs = model(train_data)
 
